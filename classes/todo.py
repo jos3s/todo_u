@@ -15,10 +15,10 @@ class Todo:
   def done(self):
     return self._done
 
-  def setdone(self):
+  def setDone(self):
     self._done = True
 
-  def undone(self):
+  def setUndone(self):
     self._done = False
 
   def __str__(self):
