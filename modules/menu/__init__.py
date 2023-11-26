@@ -3,9 +3,9 @@ def menu():
   while(not isValidOption):
     printOptions()
     option = input(f'Digite o numero da opção desejada: ')
-    if option.isdigit():
+    if option.isdigit() and int(option) > 0 and int(option) < 7:
       isValidOption = True
-  return option
+  return int(option)
 
 
 def printOptions():
