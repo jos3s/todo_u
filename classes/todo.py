@@ -15,12 +15,12 @@ class Todo:
   def done(self):
     return self._done
 
-  def done(self):
+  def setdone(self):
     self._done = True
 
   def undone(self):
     self._done = False
 
   def __str__(self):
-    return f"{self.description}, realizada: {'sim'if self.done  else 'não'}"
+    return f"{self.description}, realizada: {'sim' if self.done else 'não'}"
 
